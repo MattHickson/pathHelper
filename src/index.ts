@@ -1,1 +1,1 @@
-console.log("hello disc Bot")
+import "./bot"

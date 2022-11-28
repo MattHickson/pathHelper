@@ -1,3 +1,4 @@
 "use strict";
-console.log("hello disc Bot");
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./bot");
 //# sourceMappingURL=index.js.map

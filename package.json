@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "concurrently \"tsc -w\" \"nodemon build/index.js\""
+    "dev": "concurrently \"tsc -w\" \"nodemon build/index.js\"",
+    "deploy:commands": "tsc && node build/deploycommands.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "node": "8.19.2"
   },
   "dependencies": {
+    "@discordjs/rest": "^1.3.0",
     "concurrently": "^6.4.0",
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
