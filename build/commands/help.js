@@ -13,7 +13,15 @@ exports.execute = exports.data = void 0;
 const builders_1 = require("@discordjs/builders");
 exports.data = new builders_1.SlashCommandBuilder()
     .setName("help")
-    .setDescription("Help Ticket").addStringOption(option => option.setName("description").setDescription("Describe problem").setRequired(true));
+    .setDescription("Monster Mod Help").addStringOption(option => option.setName("mod").setDescription("Search for a Monster Mod and its Details").setRequired(true));
+const url = `https://poswebapiservice.azurewebsites.net/api/MonsterMod/Name?name=`;
+class mobdata {
+    constructor(userResponse) {
+        this.id = userResponse.id;
+        this.modName = userResponse.modName;
+        this.modEffects = userResponse.modEffects;
+    }
+}
 function execute(interaction, client) {
     return __awaiter(this, void 0, void 0, function* () {
         if (!(interaction === null || interaction === void 0 ? void 0 : interaction.channelId)) {
@@ -23,16 +31,14 @@ function execute(interaction, client) {
         if (!channel || channel.type != "GUILD_TEXT") {
             return;
         }
-        const thread = yield channel.threads.create({
-            name: `support=${Date.now()}`,
-            reason: `Sup. ticket ${Date.now()} `
-        });
-        const problemDescription = interaction.options.getString("description");
+        const mName = interaction.options.getString("mod");
         const { user } = interaction;
-        thread.send(`**User:** <@${user}> **Problem:** ${problemDescription}`);
+        const res = yield fetch(url + mName).then(res => res.json()).then(res => res);
+        console.log(res.modName);
+        console.log(res.modEffects);
         return interaction.reply({
-            content: "Thank you for the input!",
-            ephemeral: true,
+            content: res.modName + "\n" + res.modEffects,
+            ephemeral: false,
         });
     });
 }

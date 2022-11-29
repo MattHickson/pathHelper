@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30364fb3-af13-4647-8a41-dfdcbccfabbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bot.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/help.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/ping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deploycommands.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/commands/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/help.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/commands/help.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/help.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/commands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/commands/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/help.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/ping.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.11.9",
+    "js.introduce.parameter.generate.optional": "false",
     "last_opened_file_path": "C:/Users/Matt/Desktop/projectts",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
@@ -63,7 +57,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.deploy:commands">
     <configuration name="deploy:cobmmands" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -106,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy:commands" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy:cobmmands" />
         <item itemvalue="npm.start" />
       </list>
@@ -122,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669658429103</updated>
       <workItem from="1669658430555" duration="613000" />
-      <workItem from="1669659058311" duration="8626000" />
+      <workItem from="1669659058311" duration="22140000" />
     </task>
     <servers />
   </component>
