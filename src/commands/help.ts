@@ -1,6 +1,7 @@
 import {SlashCommandBuilder} from "@discordjs/builders";
 import {Client, CommandInteraction, TextChannel} from "discord.js";
 import {parseResponse} from "@discordjs/rest";
+import {mmURL} from "./urlstash";
 
 
 export const data = new SlashCommandBuilder()
@@ -12,7 +13,7 @@ export const data = new SlashCommandBuilder()
 
 //start script commands
 
-const url = `https://poswebapiservice.azurewebsites.net/api/MonsterMod/Name?name=`
+
 
 class mobdata {
     "id": number;
@@ -31,7 +32,7 @@ export async function execute(interaction: CommandInteraction, client: Client){
     }
     async function grab(){
 
-        let res = await fetch(url+mName);
+        let res = await fetch(mmURL+mName);
         return res;
     }
 

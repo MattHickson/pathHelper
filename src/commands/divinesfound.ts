@@ -1,10 +1,11 @@
 import {SlashCommandBuilder} from "@discordjs/builders";
 import {Client, CommandInteraction, TextChannel} from "discord.js";
 import {parseResponse} from "@discordjs/rest";
+import {divineURL} from "./urlstash";
 
 
-const url = `https://poswebapiservice.azurewebsites.net/api/DivinePool`
-//const url = 'https://localhost:7148/api/DivinePool'
+
+
 const current = 1
 
 class divinePool {
@@ -47,7 +48,7 @@ export async function execute(interaction: CommandInteraction, client: Client) {
         }
         let payload = new divinePool(unit)
 
-        let res = await fetch(url, {method: 'PUT',
+        let res = await fetch(divineURL, {method: 'PUT',
             headers: {'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
             agent: httpsAgent
