@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30364fb3-af13-4647-8a41-dfdcbccfabbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/divinesfound.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/commands/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/commands/help.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/help.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/commands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/commands/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/help.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +110,7 @@
       <updated>1669658429103</updated>
       <workItem from="1669658430555" duration="613000" />
       <workItem from="1669659058311" duration="22140000" />
-      <workItem from="1669728177861" duration="18439000" />
+      <workItem from="1669728177861" duration="21679000" />
     </task>
     <servers />
   </component>
