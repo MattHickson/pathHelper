@@ -13,14 +13,13 @@ exports.execute = exports.data = void 0;
 const builders_1 = require("@discordjs/builders");
 exports.data = new builders_1.SlashCommandBuilder()
     .setName("help")
-    .setDescription("Monster Mod Help").addStringOption(option => option.setName("mod").setDescription("Search for a Monster Mod and its Details").setRequired(true));
+    .setDescription("Monster Mod Help").addStringOption(option => option
+    .setName("mod")
+    .setDescription("Search for a Monster Mod and its Details")
+    .setRequired(true));
+//start script commands
 const url = `https://poswebapiservice.azurewebsites.net/api/MonsterMod/Name?name=`;
 class mobdata {
-    constructor(userResponse) {
-        this.id = userResponse.id;
-        this.modName = userResponse.modName;
-        this.modEffects = userResponse.modEffects;
-    }
 }
 function execute(interaction, client) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -31,15 +30,30 @@ function execute(interaction, client) {
         if (!channel || channel.type != "GUILD_TEXT") {
             return;
         }
+        function grab() {
+            return __awaiter(this, void 0, void 0, function* () {
+                let res = yield fetch(url + mName);
+                return res;
+            });
+        }
         const mName = interaction.options.getString("mod");
         const { user } = interaction;
-        const res = yield fetch(url + mName).then(res => res.json()).then(res => res);
-        console.log(res.modName);
-        console.log(res.modEffects);
-        return interaction.reply({
-            content: res.modName + "\n" + res.modEffects,
-            ephemeral: false,
-        });
+        try {
+            const res = yield grab().then(res => res.json()).then(res => res);
+            console.log(res.modName);
+            console.log(res.modEffects);
+            return interaction.reply({
+                content: res.modName + "\n" + res.modEffects,
+                ephemeral: false,
+            });
+        }
+        catch (error) {
+            let res = "No matching mod was found";
+            return interaction.reply({
+                content: res,
+                ephemeral: false,
+            });
+        }
     });
 }
 exports.execute = execute;

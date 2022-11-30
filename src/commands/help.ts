@@ -5,9 +5,12 @@ import {parseResponse} from "@discordjs/rest";
 
 export const data = new SlashCommandBuilder()
     .setName("help")
-    .setDescription("Monster Mod Help").addStringOption(option => option.setName("mod").setDescription("Search for a Monster Mod and its Details").setRequired(true))
+    .setDescription("Monster Mod Help").addStringOption(option => option
+        .setName("mod")
+        .setDescription("Search for a Monster Mod and its Details")
+        .setRequired(true))
 
-
+//start script commands
 
 const url = `https://poswebapiservice.azurewebsites.net/api/MonsterMod/Name?name=`
 
@@ -15,12 +18,6 @@ class mobdata {
     "id": number;
     "modName": string;
     "modEffects": string
-
-    constructor(userResponse: any) {
-        this.id = userResponse.id;
-        this.modName = userResponse.modName;
-        this.modEffects = userResponse.modEffects;
-    }
     }
 
 
@@ -32,12 +29,16 @@ export async function execute(interaction: CommandInteraction, client: Client){
     if(!channel || channel.type != "GUILD_TEXT"){
         return
     }
+    async function grab(){
+
+        let res = await fetch(url+mName);
+        return res;
+    }
 
     const mName = interaction.options.getString("mod")
     const {user} = interaction;
-    const res = await fetch(url+mName) .then(res => res.json()) .then(res => res as mobdata);
-
-
+try{
+    const res = await grab() .then(res => res.json()) .then(res => res as mobdata);
     console.log(res.modName);
     console.log(res.modEffects);
 
@@ -47,4 +48,14 @@ export async function execute(interaction: CommandInteraction, client: Client){
         content: res.modName + "\n" + res.modEffects,
         ephemeral: false,
     })
+} catch (error){
+        let res = "No matching mod was found"
+    return interaction.reply({
+
+        content: res,
+        ephemeral: false,
+    })
+}
+
+
 }

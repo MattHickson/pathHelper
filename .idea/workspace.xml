@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30364fb3-af13-4647-8a41-dfdcbccfabbf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/commands/divinesfound.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/commands/help.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/help.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/commands/help.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/help.js.map" afterDir="false" />
@@ -9,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/build/commands/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/commands/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/help.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/ping.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2IBcU75Yq0oXjyhhpZ7X7AacJom" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -41,23 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.12.1",
-    "javascript.nodejs.core.library.typings.version": "18.11.9",
-    "js.introduce.parameter.generate.optional": "false",
-    "last_opened_file_path": "C:/Users/Matt/Desktop/projectts",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Users\\Matt\\Desktop\\projectts\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.11.9&quot;,
+    &quot;js.introduce.parameter.generate.optional&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matt/Desktop/projectts&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Matt\\Desktop\\projectts\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="npm.deploy:commands">
+}</component>
+  <component name="RunManager" selected="npm.dev">
     <configuration name="deploy:cobmmands" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -100,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy:commands" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.deploy:commands" />
         <item itemvalue="npm.deploy:cobmmands" />
         <item itemvalue="npm.start" />
       </list>
@@ -117,6 +117,7 @@
       <updated>1669658429103</updated>
       <workItem from="1669658430555" duration="613000" />
       <workItem from="1669659058311" duration="22140000" />
+      <workItem from="1669728177861" duration="18439000" />
     </task>
     <servers />
   </component>
@@ -133,5 +134,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="js.build_tools.npm">
+        <watch expression="res" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
