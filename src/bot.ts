@@ -17,4 +17,7 @@ client.on('interactionCreate',async interaction=>{
     const{commandName} = interaction;
     commands[commandName].execute(interaction,client)
 })
+process.on('unhandledRejection', error => {
+    console.error('Unhandled promise rejection:', error);
+});
 client.login(config.DISCORD_TOKEN)

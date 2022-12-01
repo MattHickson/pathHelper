@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30364fb3-af13-4647-8a41-dfdcbccfabbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/urlstash.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/TEMPLATE.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/randomroll.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/divinesfound.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/divinesfound.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/bot.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/help.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +116,7 @@
       <updated>1669658429103</updated>
       <workItem from="1669658430555" duration="613000" />
       <workItem from="1669659058311" duration="22140000" />
-      <workItem from="1669728177861" duration="22702000" />
+      <workItem from="1669728177861" duration="36151000" />
     </task>
     <servers />
   </component>

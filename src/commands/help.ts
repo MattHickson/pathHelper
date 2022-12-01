@@ -11,16 +11,11 @@ export const data = new SlashCommandBuilder()
         .setDescription("Search for a Monster Mod and its Details")
         .setRequired(true))
 
-//start script commands
-
-
-
 class mobdata {
     "id": number;
     "modName": string;
     "modEffects": string
     }
-
 
 export async function execute(interaction: CommandInteraction, client: Client){
     if(!interaction?.channelId){

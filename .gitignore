@@ -7,4 +7,4 @@ build
 dotenv
 
 src/commands/urlstash.ts
-src/commands/urlstash.ts
+src/commands/TEMPLATE.ts
